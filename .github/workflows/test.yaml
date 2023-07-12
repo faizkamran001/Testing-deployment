@@ -29,10 +29,10 @@ jobs:
         # Replace the following commands with your deployment steps
         
         # Copy the built files to the server using SCP
-        scp -r ./dist user@your-server-address:/path/to/destination
+        scp -r ./ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com
         
         # SSH into the server
-        ssh user@your-server-address '
+        ec2-65-0-102-109.ap-south-1.compute.amazonaws.com '
           cd /path/to/destination
           # Install dependencies
           npm install
