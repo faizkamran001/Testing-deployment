@@ -26,14 +26,9 @@ jobs:
       
     - name: Deploy to Server
       run: |
-        # Copy the built files to the server using SCP
-        scp -r ./ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com/Testing-deployment
-        
-        # SSH into the server
-        ec2-65-0-102-109.ap-south-1.compute.amazonaws.com '
+          scp -r ./ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com/Testing-deployment
+          ec2-65-0-102-109.ap-south-1.compute.amazonaws.com '
           cd /path/to/destination
-          # Install dependencies
           npm install
-          # Restart the application
           npm run restart
-        '
+        
