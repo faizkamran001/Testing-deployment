@@ -29,6 +29,7 @@ jobs:
           scp -r ./ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com/Testing-deployment
           ec2-65-0-102-109.ap-south-1.compute.amazonaws.com '
           cd /path/to/destination
-          npm install
-          npm run restart
+             git@github.com:faizkamran001/Testing-deployment.git
+             npm install
+             npm run restart
         
