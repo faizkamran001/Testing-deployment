@@ -29,7 +29,7 @@ jobs:
         # Replace the following commands with your deployment steps
         
         # Copy the built files to the server using SCP
-        scp -r ./ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com
+        scp -r ./ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com/Testing-deployment
         
         # SSH into the server
         ec2-65-0-102-109.ap-south-1.compute.amazonaws.com '
